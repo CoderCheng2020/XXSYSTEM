@@ -24,6 +24,7 @@ public:
 		if (serverIP == NULL)
 		{
 			printf("serverIP is NULL in %s", __FUNCTION__);
+			return;
 		}
 		memset(m_serverIPv4, 0, m_SERVER_IPV4_STR_LENGTH);
 		memcpy(m_serverIPv4, serverIP, strlen(serverIP));
